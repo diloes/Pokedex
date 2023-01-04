@@ -19,8 +19,8 @@ export const Navigator = () => {
           backgroundColor: 'white',
         },
       }}>
-      <Stack.Screen name="HomeScreen" component={HomeScreen} />
-      <Stack.Screen name="PokemonScreen" component={PokemonScreen} />
+      <Stack.Screen name="HomeScreen" component={HomeScreen } />
+      <Stack.Screen name="PokemonScreen" component={ PokemonScreen } />
     </Stack.Navigator>
   );
 };

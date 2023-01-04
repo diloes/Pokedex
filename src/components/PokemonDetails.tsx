@@ -30,10 +30,7 @@ export const PokemonDetails = ({ pokemon }: Props) => {
         <Text style={styles.title}>Sprites</Text>
       </View>
 
-      <ScrollView
-        //style={}
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <FadeInImage uri={pokemon.sprites.front_default} style={styles.basicSprite} />
         <FadeInImage uri={pokemon.sprites.back_default} style={styles.basicSprite} />
         <FadeInImage uri={pokemon.sprites.front_shiny} style={styles.basicSprite} />
@@ -84,7 +81,7 @@ export const PokemonDetails = ({ pokemon }: Props) => {
         </View>
       </View>
     </ScrollView>
-  );
+  ); 
 };
 
 const styles = StyleSheet.create({
@@ -95,9 +92,11 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     marginTop: 20,
+    color: 'black'
   },
   regularText: {
     fontSize: 19,
+    color: 'black'
   },
   basicSprite: {
     width: 100,
